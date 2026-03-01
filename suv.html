@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Best SUVs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="suv.html">Best SUVs</a>
+  <a href="race.html">Best Race Cars</a>
+  <a href="sedan.html">Best Sedans</a>
+</div>
+
+<div class="content">
+  <h1>Best SUVs (No Subscription)</h1>
+
+  <div class="car-box">
+    <h2>2025 EVA Manitou</h2>
+    <p><strong>Starting Price:</strong> $32,650</p>
+    <p>A modern SUV with strong road presence, smooth driving experience, and great interior features.</p>
+  </div>
+
+  <div class="car-box">
+    <h2>Katzmann Sigmund</h2>
+    <p><strong>Starting Price:</strong> $25,625</p>
+    <p>A balanced SUV offering good performance, reliability, and excellent value for money.</p>
+  </div>
+
+</div>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("sideMenu");
+  menu.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

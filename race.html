@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Best Race Cars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="suv.html">Best SUVs</a>
+  <a href="race.html">Best Race Cars</a>
+  <a href="sedan.html">Best Sedans</a>
+</div>
+
+<div class="content">
+  <h1>Best Race Cars (No Subscription)</h1>
+
+  <div class="car-box">
+    <h2>2023 Nesumi S Sport</h2>
+    <p><strong>Price:</strong> $40,000</p>
+    <p><strong>Top Speed:</strong> 156 MPH</p>
+    <p>A high-performance sports car with aggressive styling and smooth handling, perfect for fast driving.</p>
+  </div>
+
+  <div class="car-box">
+    <h2>2011 Comrader Competitor SE</h2>
+    <p><strong>Price:</strong> $11,500</p>
+    <p><strong>Top Speed:</strong> 170 MPH</p>
+    <p>An extremely fast budget race car offering incredible speed for its price range.</p>
+  </div>
+
+</div>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("sideMenu");
+  menu.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

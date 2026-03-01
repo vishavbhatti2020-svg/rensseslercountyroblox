@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Best Sedans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="suv.html">Best SUVs</a>
+  <a href="race.html">Best Race Cars</a>
+  <a href="sedan.html">Best Sedans</a>
+</div>
+
+<div class="content">
+  <h1>Best Sedans (No Subscription)</h1>
+
+  <div class="car-box">
+    <h2>2020 Gemini 80G</h2>
+    <p><strong>Price:</strong> $22,500</p>
+    <p>A reliable sedan offering balanced performance and comfort for everyday driving.</p>
+  </div>
+
+  <div class="car-box">
+    <h2>2023 Eva Storm</h2>
+    <p><strong>Price:</strong> $25,290</p>
+    <p>A modern sedan with strong styling and good overall speed and features.</p>
+  </div>
+
+  <div class="car-box">
+    <h2>2023 Comrader Bullicose</h2>
+    <p><strong>Price:</strong> $35,125</p>
+    <p>A premium sedan with powerful performance and advanced in-game features.</p>
+  </div>
+
+</div>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("sideMenu");
+  menu.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
