@@ -1,89 +1,186 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Best Sedans</title>
-  <link rel="stylesheet" href="style.css">
+<title>Best Sedans</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
 <div id="sideMenu" class="side-menu">
-  <a href="index.html">Home</a>
-  <a href="suv.html">Best SUVs</a>
-  <a href="race.html">Best Race Cars</a>
-  <a href="sedan.html">Best Sedans</a>
-  <a href="premiumvehicleaccesscars.html">Premium Vehicles</a>
+<a href="index.html">Home</a>
+<a href="suv.html">Best SUVs</a>
+<a href="race.html">Best Race Cars</a>
+<a href="sedan.html">Best Sedans</a>
+<a href="premiumvehicleaccesscars.html">Premium Vehicles</a>
 </div>
 
 <div class="content">
 
-  <h1>Best Sedans (No Subscription)</h1>
+<h1>Best Sedans (No Subscription)</h1>
 
-  <div class="car-container">
+<div class="car-container">
 
-    <div class="car-card">
-      <img src="images/gemini80g.jpg" alt="2020 Gemini 80G">
-      <div class="car-info">
-        <h2>2020 Gemini 80G</h2>
-        <p><strong>Price:</strong> $22,500</p>
-        <p>A reliable sedan offering smooth performance and comfort.</p>
-      </div>
-    </div>
-
-    <div class="car-card">
-      <img src="images/evastorm.jpg" alt="2023 EVA Storm">
-      <div class="car-info">
-        <h2>2023 EVA Storm</h2>
-        <p><strong>Price:</strong> $25,290</p>
-        <p>A stylish modern sedan with balanced speed and efficiency.</p>
-      </div>
-    </div>
-
-    <div class="car-card">
-      <img src="images/bullicose.jpg" alt="2023 Comrader Bullicose">
-      <div class="car-info">
-        <h2>2023 Comrader Bullicose</h2>
-        <p><strong>Price:</strong> $35,125</p>
-        <p>A sporty sedan delivering strong acceleration and control.</p>
-      </div>
-    </div>
-
-    <div class="car-card">
-      <img src="images/erbendorf.jpg" alt="2023 Sternauster Erbendorf">
-      <div class="car-info">
-        <h2>2023 Sternauster Erbendorf</h2>
-        <p><strong>Price:</strong> $46,000</p>
-        <p>A premium sedan with advanced features and road presence.</p>
-      </div>
-    </div>
-
-    <div class="car-card">
-      <img src="images/lyonlf.jpg" alt="2013 Lyon LF">
-      <div class="car-info">
-        <h2>2013 Lyon LF</h2>
-        <p><strong>Price:</strong> $46,975</p>
-        <p>A powerful classic sedan known for durability and strength.</p>
-      </div>
-    </div>
-
-    <div class="car-card">
-      <img src="images/castell.jpg" alt="2014 Sternauster Castell Sedan">
-      <div class="car-info">
-        <h2>2014 Sternauster Castell Sedan</h2>
-        <p><strong>Price:</strong> $13,495</p>
-        <p>An affordable beginner-friendly sedan with reliable performance.</p>
-      </div>
-    </div>
-
-  </div>
+<!-- Gemini -->
+<div class="car-card" onclick="openPopup('gemini')">
+<img src="images/gemini80g.jpg">
+<div class="car-info">
+<h2>2020 Gemini 80G</h2>
+<p><strong>Price:</strong> $22,500</p>
+<p>A reliable sedan offering smooth performance and comfort.</p>
+</div>
 </div>
 
+<!-- Eva Storm -->
+<div class="car-card" onclick="openPopup('storm')">
+<img src="images/evastorm.jpg">
+<div class="car-info">
+<h2>2023 EVA Storm</h2>
+<p><strong>Price:</strong> $25,290</p>
+<p>A stylish modern sedan with balanced speed and efficiency.</p>
+</div>
+</div>
+
+<!-- Bullicose -->
+<div class="car-card" onclick="openPopup('bullicose')">
+<img src="images/bullicose.jpg">
+<div class="car-info">
+<h2>2023 Comrader Bullicose</h2>
+<p><strong>Price:</strong> $35,125</p>
+<p>A sporty sedan delivering strong acceleration and control.</p>
+</div>
+</div>
+
+<!-- Erbendorf -->
+<div class="car-card" onclick="openPopup('erbendorf')">
+<img src="images/erbendorf.jpg">
+<div class="car-info">
+<h2>2023 Sternauster Erbendorf</h2>
+<p><strong>Price:</strong> $46,000</p>
+<p>A premium sedan with advanced features and road presence.</p>
+</div>
+</div>
+
+<!-- Lyon -->
+<div class="car-card" onclick="openPopup('lyon')">
+<img src="images/lyonlf.jpg">
+<div class="car-info">
+<h2>2013 Lyon LF</h2>
+<p><strong>Price:</strong> $46,975</p>
+<p>A powerful classic sedan known for durability and strength.</p>
+</div>
+</div>
+
+<!-- Castell -->
+<div class="car-card" onclick="openPopup('castell')">
+<img src="images/castell.jpg">
+<div class="car-info">
+<h2>2014 Sternauster Castell Sedan</h2>
+<p><strong>Price:</strong> $13,495</p>
+<p>An affordable beginner-friendly sedan with reliable performance.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- POPUPS -->
+
+<div id="gemini" class="popup">
+<div class="popup-content">
+<span onclick="closePopup('gemini')" class="close-btn">✖</span>
+<h2>Gemini 80G</h2>
+<p><b>Features</b></p>
+<p>• Good looks</p>
+<p>• Key Not Detected system</p>
+<p>• Best speed among sedans</p>
+<p><b>Developer Opinion:</b> A perfect sedan if you want speed without losing comfort.</p>
+</div>
+</div>
+
+
+<div id="storm" class="popup">
+<div class="popup-content">
+<span onclick="closePopup('storm')" class="close-btn">✖</span>
+<h2>EVA Storm</h2>
+<p><b>Features</b></p>
+<p>• Mirror closing feature</p>
+<p>• Key not detected warning</p>
+<p>• Modern sporty design</p>
+<p><b>Developer Opinion:</b> Great balance between performance and style.</p>
+</div>
+</div>
+
+
+<div id="bullicose" class="popup">
+<div class="popup-content">
+<span onclick="closePopup('bullicose')" class="close-btn">✖</span>
+<h2>Comrader Bullicose</h2>
+<p><b>Features</b></p>
+<p>• Strong muscle power</p>
+<p>• Excellent road presence</p>
+<p>• Sporty driving experience</p>
+<p><b>Developer Opinion:</b> One of the most aggressive sedans in the game.</p>
+</div>
+</div>
+
+
+<div id="erbendorf" class="popup">
+<div class="popup-content">
+<span onclick="closePopup('erbendorf')" class="close-btn">✖</span>
+<h2>Sternauster Erbendorf</h2>
+<p><b>Features</b></p>
+<p>• Mirror closing feature</p>
+<p>• Key not detected system</p>
+<p>• Premium luxury design</p>
+<p><b>Developer Opinion:</b> Looks expensive and performs like a true luxury sedan.</p>
+</div>
+</div>
+
+
+<div id="lyon" class="popup">
+<div class="popup-content">
+<span onclick="closePopup('lyon')" class="close-btn">✖</span>
+<h2>Lyon LF</h2>
+<p><b>Features</b></p>
+<p>• Classic old design</p>
+<p>• Mirror closing feature</p>
+<p>• Strong durable build</p>
+<p><b>Developer Opinion:</b> Old but still one of the classiest sedans.</p>
+</div>
+</div>
+
+
+<div id="castell" class="popup">
+<div class="popup-content">
+<span onclick="closePopup('castell')" class="close-btn">✖</span>
+<h2>Sternauster Castell</h2>
+<p><b>Features</b></p>
+<p>• Affordable sedan</p>
+<p>• Comfortable driving</p>
+<p>• Reliable performance</p>
+<p><b>Developer Opinion:</b> Best budget sedan for beginners.</p>
+</div>
+</div>
+
+
 <script>
-function toggleMenu() {
-  var menu = document.getElementById("sideMenu");
-  menu.classList.toggle("show");
+
+function toggleMenu(){
+document.getElementById("sideMenu").classList.toggle("show");
 }
+
+function openPopup(id){
+document.getElementById(id).style.display="flex";
+}
+
+function closePopup(id){
+document.getElementById(id).style.display="none";
+}
+
 </script>
 
 </body>
