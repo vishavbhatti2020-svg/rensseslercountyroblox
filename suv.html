@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Best SUVs</title>
 <link rel="stylesheet" href="style.css">
@@ -23,125 +24,159 @@
 
 <div class="car-container">
 
-<div class="car-card" onclick="openCar('manitou')">
+<!-- EVA MANITOU -->
+
+<div class="car-card"
+onclick="openPopup(
+'2025 EVA Manitou',
+'$32,650',
+'Auto Start Stop, Modern Look, Key Not Detected System',
+'Modern SUV with stylish design and good comfort features.'
+)">
+
 <img src="images/manitou.jpg">
 <h3>2025 EVA Manitou</h3>
 <p>Price: $32,650</p>
+
 </div>
 
-<div class="car-card" onclick="openCar('sigmund')">
+<!-- SIGMUND -->
+
+<div class="car-card"
+onclick="openPopup(
+'2023 Katzmann Sigmund',
+'$25,625',
+'Auto Start Stop, Key Not Detected System, Auto Closing Mirrors (some variants)',
+'Reliable SUV with useful comfort features.'
+)">
+
 <img src="images/sigmund.jpg">
-<h3>Katzmann Sigmund</h3>
+<h3>2023 Katzmann Sigmund</h3>
 <p>Price: $25,625</p>
+
 </div>
 
-<div class="car-card" onclick="openCar('sigmund19')">
+<!-- 2019 SIGMUND -->
+
+<div class="car-card"
+onclick="openPopup(
+'2019 Katzmann Sigmund',
+'$17,000',
+'Auto Start Stop, Key Not Detected System',
+'Budget friendly SUV with good reliability.'
+)">
+
 <img src="images/2019sigmund.jpg">
 <h3>2019 Katzmann Sigmund</h3>
 <p>Price: $17,000</p>
+
 </div>
 
-<div class="car-card" onclick="openCar('pacer')">
+<!-- PACER -->
+
+<div class="car-card"
+onclick="openPopup(
+'2021 Koritu Pacer',
+'$29,000',
+'Sporty handling, strong engine performance',
+'Good mid-range SUV with solid driving experience.'
+)">
+
 <img src="images/pacer.jpg">
 <h3>2021 Koritu Pacer</h3>
 <p>Price: $29,000</p>
+
 </div>
 
-<div class="car-card" onclick="openCar('pinnacle')">
+<!-- PINNACLE -->
+
+<div class="car-card"
+onclick="openPopup(
+'2023 Senseon Pinnacle',
+'$37,365',
+'Premium interior, advanced driving features',
+'Premium SUV with modern technology.'
+)">
+
 <img src="images/pinnacle.jpg">
 <h3>2023 Senseon Pinnacle</h3>
 <p>Price: $37,365</p>
+
 </div>
 
-<div class="car-card" onclick="openCar('ik4')">
+<!-- IK4 -->
+
+<div class="car-card"
+onclick="openPopup(
+'2023 Katzmann IK.4',
+'$38,790',
+'Sport styling, strong performance',
+'Stylish SUV with high performance feel.'
+)">
+
 <img src="images/ik4.jpg">
 <h3>2023 Katzmann IK.4</h3>
 <p>Price: $38,790</p>
+
 </div>
 
 </div>
 </div>
 
-<!-- POPUP -->
 
-<div id="carPopup" class="popup">
+<!-- POPUP CARD -->
+
+<div id="popup" class="popup">
 
 <div class="popup-content">
 
-<span class="close-btn" onclick="closeCar()">✖</span>
+<span class="close-btn" onclick="closePopup()">✖</span>
 
-<h2 id="carTitle"></h2>
+<h2 id="popupTitle"></h2>
 
-<p id="carPrice"></p>
+<p id="popupPrice"></p>
 
-<p id="carFeatures"></p>
+<p><strong>Features:</strong></p>
+<p id="popupFeatures"></p>
 
-<p id="carOpinion"></p>
+<p><strong>Dev Opinion:</strong></p>
+<p id="popupOpinion"></p>
 
 </div>
 
 </div>
+
 
 <script>
 
 function toggleMenu() {
+
 var menu = document.getElementById("sideMenu");
 menu.classList.toggle("show");
-}
-
-function openCar(car){
-
-document.getElementById("carPopup").style.display="flex";
-
-if(car=="manitou"){
-document.getElementById("carTitle").innerText="2025 EVA Manitou";
-document.getElementById("carPrice").innerText="Price: $32,650";
-document.getElementById("carFeatures").innerText="Features: Auto Start Stop, Modern Look, Key Not Detected system.";
-document.getElementById("carOpinion").innerText="Dev Opinion: Stylish modern SUV with useful smart features.";
-}
-
-if(car=="sigmund"){
-document.getElementById("carTitle").innerText="Katzmann Sigmund";
-document.getElementById("carPrice").innerText="Price: $25,625";
-document.getElementById("carFeatures").innerText="Features: Auto Start Stop, Key Not Detected system, Auto Closing Mirrors in some variants.";
-document.getElementById("carOpinion").innerText="Dev Opinion: Reliable SUV with useful comfort features.";
-}
-
-if(car=="sigmund19"){
-document.getElementById("carTitle").innerText="2019 Katzmann Sigmund";
-document.getElementById("carPrice").innerText="Price: $17,000";
-document.getElementById("carFeatures").innerText="Features: Auto Start Stop, Key Not Detected system, Auto Closing Mirrors in some variants.";
-document.getElementById("carOpinion").innerText="Dev Opinion: Affordable SUV with good practicality.";
-}
-
-if(car=="pacer"){
-document.getElementById("carTitle").innerText="2021 Koritu Pacer";
-document.getElementById("carPrice").innerText="Price: $29,000";
-document.getElementById("carFeatures").innerText="Features: Comfortable interior, smooth driving and good reliability.";
-document.getElementById("carOpinion").innerText="Dev Opinion: Balanced SUV for daily driving.";
-}
-
-if(car=="pinnacle"){
-document.getElementById("carTitle").innerText="2023 Senseon Pinnacle";
-document.getElementById("carPrice").innerText="Price: $37,365";
-document.getElementById("carFeatures").innerText="Features: Premium interior, modern technology and advanced driving systems.";
-document.getElementById("carOpinion").innerText="Dev Opinion: One of the most premium SUVs available.";
-}
-
-if(car=="ik4"){
-document.getElementById("carTitle").innerText="2023 Katzmann IK.4";
-document.getElementById("carPrice").innerText="Price: $38,790";
-document.getElementById("carFeatures").innerText="Features: Sporty design, strong performance and luxury comfort.";
-document.getElementById("carOpinion").innerText="Dev Opinion: Powerful SUV with aggressive styling.";
-}
 
 }
 
-function closeCar(){
-document.getElementById("carPopup").style.display="none";
+
+function openPopup(title, price, features, opinion) {
+
+document.getElementById("popupTitle").innerText = title;
+document.getElementById("popupPrice").innerText = "Price: " + price;
+document.getElementById("popupFeatures").innerText = features;
+document.getElementById("popupOpinion").innerText = opinion;
+
+document.getElementById("popup").classList.add("show");
+
+}
+
+
+function closePopup(){
+
+document.getElementById("popup").classList.remove("show");
+
 }
 
 </script>
+
 
 </body>
 </html>
